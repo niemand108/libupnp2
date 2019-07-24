@@ -19,7 +19,7 @@ INCLUDES += -I$(UPNPLIB)/include -I$(SRCBASE)/include -I$(SRCBASE)/include/bcmcr
 CFLAGS += ${INCLUDES}
 CFLAGS += -Wno-error=address -Wno-pointer-to-int-cast
 CFLAGS += -Wall -Wunused -g -s
-CFLAFS += -fPIC
+CFLAGS += -fPIC
 LDFLAGS = -L$(TOP)/libbcmcrypto -lbcmcrypto
 
 vpath %.c $(SRCPATH) $(UPNPLIB)/linux
